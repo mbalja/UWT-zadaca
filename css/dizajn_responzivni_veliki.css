@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+
+#pola {
+    display: flex;
+}
+
+#pola section,
+#pola aside {
+    width: 50%;
+    margin: 0px;
+}
+
+#hamburger {
+    display: none;
+}
+
+}

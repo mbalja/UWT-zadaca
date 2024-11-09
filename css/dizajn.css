@@ -1,0 +1,551 @@
+
+/*SVE*/
+
+* {
+    font-family: arial;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+/*INDEX*/
+
+#indexHtml {
+    background-color: #312f2f;
+}
+
+footer {
+    color: white;
+}
+
+footer a ~ img {
+    width: 60px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    color:rgb(255, 255, 255);
+    font-size: 250%;
+}
+
+.naslov {
+    color:rgb(255, 255, 255);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    font-size: 20px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    background-color: #645f5f;
+}
+
+.aktivna {
+    background-color: #cc0606;
+}
+
+
+#pola section+br+aside img {
+    max-width: 70%;
+}
+
+#indexHtml main  {
+    align-items: center;
+    text-align: center;
+    margin:0px;
+}
+
+#pocetnaVideo {
+    margin: 0px auto;
+    max-width: 100%;
+}
+
+
+#naslovnaslika {
+    width: 100%;
+    height: auto;
+    margin:0px;
+}
+
+#oIgrici {
+    border: 2px solid #000000;
+    background-color: #d48f56;
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding: 60px;
+}
+
+#borderOIgrici {
+    border: 10px solid #d1762e;
+    background-color: #d1762e;
+    margin-bottom: 10px;
+}
+
+
+#pravilaIgre {
+    border: 2px solid #000000;
+    background-color: #d48f56;
+    color:rgb(0, 0, 0);
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding: 60px;
+}
+
+#borderPravila {
+    border: 10px solid #d1762e;
+    background-color: #d1762e;
+    margin-bottom: 10px;
+}
+
+div#recenzije {
+    border: 2px solid #000000;
+    background-color: #d48f56;
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding: 60px;
+}
+
+#borderRecenzije {
+    border: 10px solid #d1762e;
+    background-color: #d1762e;
+}
+
+#townOfImpostors {
+    border: 2px solid #000000;
+    background-color: #d48f56;
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    box-sizing:border-box;
+    padding: 10px;
+}
+
+#sheriffMod {
+    border: 2px solid #000000;
+    background-color: #d48f56;
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    box-sizing:border-box;
+    padding:10px;
+}
+
+#borderTown, #borderSheriff, #borderLove {
+    border: 10px solid #d1762e;
+    background-color: #d1762e;
+}
+
+div#loveCouple {
+    border: 2px solid #000000;
+    background-color: #d48f56;
+    color: rgb(0, 0, 0);
+    border-radius: 0px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.gumb {
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    font-size: 20px;
+    background-color: #d1762e;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+/*AUTOR*/
+
+#autorHtml {
+    background-color: #312f2f;
+}
+
+#oAutoru {
+    border: 10px solid #aa3e1d;
+    background-color: #E78F73;
+    color:#000000;
+    border-radius: 0px;
+    margin-bottom: 5px;
+}
+
+#slikaAutora {
+    margin: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+li a[href="mailto:"] {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#autorBorder {
+    border: 3px solid #aa3e1d;
+    background-color: #aa3e1d;
+    border-radius: 0px;
+}
+
+
+/*DOKUMENTACIJA*/
+
+#dokumentacijaHtml{
+    background-color: #312f2f;
+    margin: 10px;
+}
+
+.navigacija {
+    border: 3px solid #7EAFDD;
+    background-color: #7EAFDD;
+    border-radius: 0px;
+    color: white;
+}
+
+.dokumentacija {
+    color:rgb(0, 0, 0);
+}
+
+.navigacija, .dokumentacija {
+    text-decoration: none;
+    border-bottom: none;
+    color:rgb(0, 0, 0);
+}
+
+.navigacijaborder {
+    border: 3px solid #235685;
+    background-color:#235685;
+    border-radius: 0px;
+}
+
+
+
+
+
+/*FORUM*/
+
+#forumHtml {
+    background-color: #312f2f;
+    margin: 10px;
+}
+
+#kljucneRijeci {
+    border: 3px solid black;
+    background-color: #d1762e;
+    border-radius: 5px;
+    color:#000000;
+}
+
+label[for="tema"],
+label[for="tema2"],
+input[name="tema"] {   
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+textarea {                  
+    margin-bottom: 30px;
+    margin: 10px;
+    max-width: 90%;
+}
+
+label[for="citat"] {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+label[for="razina"] {
+    margin: 10px;
+}
+
+label[for="kljucneRijeci"],
+label[for="kljucneRijeci2"] {
+    margin: 10px;
+}
+
+label[for="komentar"] {
+    margin: 10px;
+}
+
+#posalji, #posalji2 {
+    margin-top: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    background-color:rgb(255, 255, 255);
+    box-sizing:border-box;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#kljucneRijeci2  {
+    margin: 10px;
+}
+
+label[for=razina2] {
+    margin: 10px;
+}
+
+.padajucaLista1 {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+#objave {
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+#objave h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:white;
+}
+  
+#objave div {
+    padding: 20px;
+    border: 3px solid #d1762e;
+    background-color: #1c1e27;
+    margin-bottom: 20px;
+    color:white;
+    border-radius: 0px;
+}
+  
+#objave h4 {
+    margin-bottom: 10px;
+}
+  
+#objave p {
+    margin-bottom: 10px;
+}
+  
+#objave cite {
+    display: block;
+    font-style: italic;
+    margin-bottom: 10px;
+    
+}
+  
+#objave p:last-child {  /*pseudo element*/
+    margin-bottom: 0;
+}
+  
+#objave div:nth-child(even) {  /*pseudo element*/
+    background-color: #f9f9f9;
+    color:rgb(0, 0, 0);
+}
+  
+#zaPretrazivanje {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #d1762e;
+    border-radius: 0px;
+}
+
+#obrazacZaObjavljivanje label[for="tema"],
+#obrazacZaObjavljivanje label[for="komentar"] {
+    color: black;
+}
+
+#formObjavljivanje {
+    border: 2px solid black;
+    background-color: #d1762e;
+    border-radius: 0px;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/*GALERIJA*/
+
+#galerijaHtml {
+    background-color: #312f2f;
+}
+
+.naslov {
+    color: rgb(255, 255, 255);
+}
+
+#slike {
+    color: white;
+}
+
+#slikeBorder {
+    border: 1px solid black;
+    background-color: rgb(32, 170, 170);
+    color: rgb(0, 0, 0);
+}
+
+#videi {
+    color: white;
+}
+
+#videiBorder {
+    border: 1px solid black;
+    background-color: rgb(32, 170, 170);
+    color: rgb(0, 0, 0);
+}
+
+#interaktivnaSlika {
+    color: white;
+}
+
+.slika {
+    width: 250px;
+}
+
+#slike figure {
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+}
+  
+#slike figure img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+  
+#slike figure:hover img {  /*pseudo element*/
+    transform: scale(1.2);
+}
+
+.video {
+    width: 250px;
+}
+
+#videi figure {
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+  
+#videi figure:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+  
+#videi figure iframe, #videi figure video {
+    width: 100%;
+    height: 100%;
+}
+  
+#videi figure figcaption {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/*TRGOVINA*/
+
+#trgovinaHtml {
+    background-color: #312f2f;
+}
+
+#pretraziTrgovinu {
+    color: rgb(0, 0, 0);
+}
+
+#popisProizvoda {
+    margin: 10px;
+}
+
+table {                            
+    color: white;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table>tbody>tr:nth-child(odd) {
+    background-color: #444;
+}
+table>thead {
+    background-color: #beafff;
+    color: black;
+}
+
+table>tbody>tr:last-child {
+    background-color: #a895ff;
+    color: black;
+}
+
+.header_footer {
+    border: 10px solid #a895ff;
+    background-color: #beafff;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+fieldset {                         
+    background-color: #beafff;
+    border: 1px solid #a895ff;
+    border-radius: 15px;
+    margin: 10px;
+    box-sizing:border-box;
+    padding: 25px;
+}
+
+#karakteristike {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#kupovina {
+    margin-top: 10px;
+}
+
+.naziv {
+    font-weight: bold;
+}
+
+#gridDijete1 {
+    grid-area: kar;
+}
+
+#gridDijete2 {
+    grid-area: kup;
+}
+
+.gridDijete3 {
+    grid-area: tip;
+}
+
+#cssGrid {
+    display: grid;
+    grid-template-areas: 
+        "kar kup"
+        "tip tip";
+    gap: 20px;
+}
+
+
+

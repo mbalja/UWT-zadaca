@@ -1,0 +1,112 @@
+@media (max-width: 400px) {  
+
+    /* Autor */
+
+#slikaAutora {
+    position: relative;
+}
+
+    /* Forum */
+
+#citat {
+    max-width:80%;
+    width:80%;
+}
+
+#forumHtml {
+    overflow-x: hidden;
+}
+
+header a {
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    color:rgb(255, 255, 255);
+    font-size: 150%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form {
+    margin-bottom: 20px;
+}
+    
+form label {
+    margin-bottom: 5px;
+}
+    
+form input,
+form textarea,
+form select {
+    width: 90%;
+    padding: 5px;
+    margin:10px;
+}
+    
+form select[multiple] {
+    height: auto;
+}
+
+
+
+   /* Index */ 
+
+#naslovnaslika {
+    max-width: 100%;
+    height:auto;
+}
+
+    /* Izbornik */
+
+nav #hamburger {
+    width: 10%;
+}
+
+nav ul {
+    display: none;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav ul li {
+    float: left;
+    width: 100%;
+    height: 50%;
+}
+
+nav ul li a {
+    padding: 4px;
+}
+
+
+    /* Trgovina */
+
+#cssGrid {
+    display: grid;
+    grid-template-areas: 
+        "kar"
+        "kup"
+        "tip";
+    gap: 20px;
+}
+
+#interaktivnaSlika img {
+    max-width: 100%;
+}
+
+
+/* Tablica */
+
+table tr>td:last-child,
+table tr>th:last-child {
+    display: none;
+}
+    
+}

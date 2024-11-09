@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+        <title>Forum</title>
+        <meta name="autor" content="Martina Balja">
+        <meta name="opis" content="Stranica za forum">
+        <meta name="kljucne_rijeci" content="forum, obrazac, ljudi">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_mali.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_srednji.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_veliki.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_ispis.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="forumHtml">
+    <header>
+        <a href="../index.html">
+            <img src="../dokumenti/slike/Among-Us-Logo.png" width="200" alt="lik igrice">
+            <h1>Among Us</h1>
+        </a>
+    </header>
+    <nav>
+        <img src="../dokumenti/slike/hamburger.png" id="hamburger" alt="Hamburger">
+        <ul>
+            <li><a href="../index.html">Početna stranica</a></li>
+            <li><a href="../dokumentacija/autor.html">Autor</a></li>
+            <li><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+            <li><a class="aktivna" href="forum.html">Forum</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="trgovina.html">Trgovina</a></li>
+            </ul>
+    </nav>
+    <main>
+        <h2 class="naslov">Forum</h2>
+        <section id="obrazacZaObjavljivanje">
+            <h3 class="naslov">Obrazac za objavljivanje na forum</h3>
+            <form id="formObjavljivanje" method="POST" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php">
+                <label for="tema">Tema</label>
+                <input type="text" id="tema" name="tema" maxlength="100" size="100" required><br>
+                <label for="komentar">Komentar</label>
+                <textarea id="komentar" name="komentar" rows="50" cols="300" minlength="50" required></textarea>
+                <br>
+                <label for="kljucneRijeci">Ključne riječi</label>
+                <select id="kljucneRijeci" name="kljucneRijeci" required multiple>
+                    <option value="oIgrici" selected class="padajucaLista1">O igrici</option>
+                    <option value="impostor" class="padajucaLista1">Impostor</option>
+                    <option value="crewmate" class="padajucaLista1">Crewmate</option>
+                    <option value="pobjeda" class="padajucaLista1">Pobjeda</option>
+                    <option value="gubitak" class="padajucaLista1">Gubitak</option>
+                    <option value="igrica" class="padajucaLista1">Igrica</option>
+                    <option value="modovi" class="padajucaLista1">Modovi</option>
+                    <option value="proizvodi" class="padajucaLista1">Proizvodi</option>
+                    <option value="dodaci" class="padajucaLista1">Dodaci</option>
+                    <option value="likovi" class="padajucaLista1">Likovi</option>
+                </select>
+                <br>
+                <label for="citat">Citat</label>
+                <textarea id="citat" name="citat" cols="300" rows="2" maxlength="300" required></textarea><br>
+                <label for="razina">Razina ili iskustvo</label>
+                <input type="number" id="razina" name="razina" min="1" max="1024" required><br>
+                <input type="submit" id="posalji" name="posalji" value="Pošalji">
+            </form>
+        </section>
+        <br>
+        <h3 class="naslov">Obrazac za pretraživanje foruma</h3>
+        <section id="obrazacZaPretrazivanje">
+            <div id="zaPretrazivanje">
+                <form method="POST" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php">
+                    <label for="tema2">Tema</label>
+                    <input type="text" id="tema2" name="tema"><br>
+                    <label for="kljucneRijeci2">Ključna riječ</label>
+                    <select id="kljucneRijeci2" name="kljucneRijeci" multiple>
+                        <option value="oIgrici" selected class="padajucaLista2">O igrici</option>
+                        <option value="impostor" class="padajucaLista2">Impostor</option>
+                        <option value="crewmate" class="padajucaLista2">Crewmate</option>
+                        <option value="pobjeda" class="padajucaLista2">Pobjeda</option>
+                        <option value="gubitak" class="padajucaLista2">Gubitak</option>
+                        <option value="gubitak" class="padajucaLista2">Gubitak</option>
+                        <option value="igirca" class="padajucaLista2">Igrica</option>
+                        <option value="modovi" class="padajucaLista2">Modovi</option>
+                        <option value="proizvodi" class="padajucaLista2">Proizvodi</option>
+                        <option value="dodaci" class="padajucaLista2">Dodaci</option>
+                        <option value="likovi" class="padajucaLista2">Likovi</option>
+                    </select>
+                    <br>
+                    <div>
+                        <label for="razina2">Razina ili iskustvo</label>
+                        <input type="number" id="razina2" name="razina" min="1" max="1024" required><br>
+                        <input type="submit" id="posalji2" name="pretrazi" value="Pretraži">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <br>
+        <section id="objave">
+            <h3 class="naslov">Objave na forumu</h3>
+            <div id="objava1">
+                <h4>Tko je bio najbolji impostor kojeg ste ikad susreli?</h4>
+                <p>Sreo sam nekoliko sjajnih impostora tijekom igre, ali jedan koji mi je ostao u sjećanju bio je vrlo lukav u tome što je uspio zavarati cijelu posadu i uvjeriti nas da je netko drugi varalica. Bilo je impresivno gledati kako igra s našim mislima!</p>
+                <p>impostor, igra, pobjeda, poraz</p>
+                <cite>"Nikad nisam susreo tako lukavog Impostora kao sinoć. On je znao točno koga optužiti i kada šutjeti. Bilo je impresivno i uznemirujuće u isto vrijeme." - user2315</cite>
+                <p>Razina: 25</p>
+            </div>
+            <div id="objava2">
+                <h4>Kako najbolje prevariti svoje prijatelje u igri Among Us?</h4>
+                <p>Često igram igricu Among Us sa svojim prijateljima, no vrlo brzo me otkriju.</p>
+                <p>likovi, impostor, igrica, gubitak</p>
+                <cite>"Najbolji način da prevarite svoje prijatelje u igri Among Us je da imate dobro osmišljenu priču i budete uvjerljivi u svojim lažima." - John Doe</cite>
+                <p>Razina: 3</p>
+            </div>
+            <div id="objava3">
+                <h4>Koji su najzabavniji načini za otkrivanje impostora u igri Among Us?</h4>
+                <p>Nemam ideje kako što brže otkriti impostora, u većini slučajeva vjerujem svakom.</p>
+                <p>impostor, crewmate, pobjeda</p>
+                <cite>"Sve se svodi na vašu sposobnost da pročitate druge igrače i otkrijete tko govori istinu, a tko laže." - player6718</cite>
+                <p>Razina: 13</p>
+            </div>
+            <div id="objava4">
+                <h4>Koji su vaši najveći izazovi u igri Among Us?</h4>
+                <p>Imam mnogo izazova tokom igranja igrice te me zanimaju najčešći izazovi drugih igrača.</p>
+                <p>igrica, gubitak, pobjeda</p>
+                <cite>"Ponekad mi je teško držati fokus i pratiti što se događa na karti kada se igra ubrza, ali to je ono što čini igru još izazovnijom!" - user913</cite>
+                <p>Razina: 5</p>
+            </div>
+            <div id="objava5">
+                <h4>Koja taktika vam je najviše pomogla da pobjedite u igri Among Us?</h4>
+                <p>Zanimaju me iskustva igrača koji često pobjeđuju u igri, trebam neki savjet. </p>
+                <p>pobjeda, igrica, likovi, modovi</p>
+                <cite>"Ekipa s dobrim komunikacijskim vještinama i razumijevanjem zadataka uvijek ima prednost." - user957</cite>
+                <p>Razina: 23</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023. Martina Balja
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <img src="../dokumenti/slike/licenca.png" alt="licenca CC BY">
+        </a>
+        <img src="../dokumenti/slike/HTML5.png" alt="HTML oznaka" width="60">
+    </footer>
+</body>
+
+</html>

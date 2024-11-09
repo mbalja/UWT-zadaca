@@ -1,0 +1,76 @@
+@media (min-width: 401px) and (max-width: 1023px) {
+
+/* Autor */
+
+#slikaAutora {
+    position: relative;
+}
+    
+#citat {
+    max-width:80%;
+    width:80%;
+}
+
+textarea[id="komentar"] {
+    max-width:80%;
+}
+
+input[type="text"] {
+    max-width:80%;
+}
+
+header a {
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: none;
+    color:rgb(255, 255, 255);
+    font-size: 150%;
+}
+
+#interaktivnaSlika img {
+    max-width: 100%;
+}
+
+/* Izbornik */
+
+
+nav #hamburger {
+    width: 10%;
+}
+
+nav ul {
+    display: none;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav ul li {
+    float: left;
+    width: 100%;
+    height: 50%;
+}
+
+nav ul li a {
+    padding: 6px;
+}
+
+    /* Trgovina */
+
+#cssGrid {
+    display: grid;
+    grid-template-areas: 
+        "kar"
+        "kup"
+        "tip";
+    gap: 20px;
+}
+table tr>td:last-child,
+table tr>th:last-child {
+    display: none;
+}
+
+
+}

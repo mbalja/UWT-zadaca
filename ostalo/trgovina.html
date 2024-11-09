@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+        <title>Trgovina</title>
+        <meta name="autor" content="Martina Balja">
+        <meta name="opis" content="Stranica za web kupovinu">
+        <meta name="kljucne_rijeci" content="web, trgovina, kupovina">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_mali.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_srednji.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_veliki.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_ispis.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="trgovinaHtml">
+    <header>
+        <a href="../index.html">
+            <img src="../dokumenti/slike/Among-Us-Logo.png" width="200" alt="lik igrice">
+            <h1>Among Us</h1>
+        </a>
+    </header>
+
+    <nav>
+      <img src="../dokumenti/slike/hamburger.png" id="hamburger" alt="Hamburger">
+      <ul>
+        <li><a href="../index.html">Početna stranica</a></li>
+        <li><a href="../dokumentacija/autor.html">Autor</a></li>
+        <li><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a class="aktivna" href="trgovina.html">Trgovina</a></li>
+      </ul>
+    </nav>
+
+        <main>
+        <h2 class="naslov">Trgovina</h2>
+        <section id="pretraziTrgovinu">
+          <h3 class="naslov">Pretraži trgovinu</h3>
+            <form id="cssGrid" method="POST" action="https://spider.foi.hr/UWT/materijali/ispis_forme.php">
+
+              <div id="gridDijete1" class="header_footer">
+                <fieldset id="karakteristike">
+                  <legend class="naziv">KARAKTERISTIKE</legend>
+                    <label for="vrsta">Vrsta proizvoda</label>
+                    <select id="vrsta" name="vrsta">
+                      <optgroup label="Igračka">
+                        <option value="plisane">Plišane igračke</option>
+                        <option value="drustvene">Društvene igre</option>
+                        <option value="plastične">Plastične igračke</option>
+                      </optgroup>
+                      <optgroup label="Odjeća">
+                        <option value="dukse">Dukse</option>
+                        <option value="haljine">Haljine</option>
+                        <option value="hlace">Hlače</option>
+                      </optgroup>
+                      <optgroup label="Igra">
+                        <option value="amongus">Among Us igrica</option>
+                        <option value="dodaciZaIgru">Dodaci za igru</option>
+                        <option value="fizickeKopije">Fizičke kopije Among Us</option>
+                      </optgroup>
+                    </select><br>
+                    <label for="nazivProizvoda">Naziv proizvoda</label>
+                    <input type="text" id="nazivProizvoda" name="nazivProizvoda" maxlength="100" placeholder="Unesite naziv"><br>
+                    <label for="popularno">Popularno</label>
+                    <input type="checkbox" id="popularno" name="popularno" value="popularno"><br>
+                    <label for="boja1">Popusti</label>
+                    <input type="radio" id="boja1" name="boja" value="crna" checked>Crna
+                    <input type="radio" id="boja2" name="boja" value="crvena">Crvena
+                    <input type="radio" id="boja3" name="boja" value="plava">Plava
+                    <input type="radio" id="boja4" name="boja" value="zuta">Žuta
+                    <input type="radio" id="boja5" name="boja" value="zelena">Zelena<br>
+                    <label for="materijal">Materijal</label>
+                    <select id="materijal" name="materijal">
+                      <option value="plastika">Plastika</option>
+                      <option value="staklo">Staklo</option>
+                      <option value="guma">Guma</option>
+                      <option value="ostalo">Ostalo</option>
+                    </select><br>
+                </fieldset>
+              </div>
+
+              <div id="gridDijete2" class="header_footer">
+                <fieldset id="kupovina">
+                  <legend class="naziv">KUPOVINA</legend>
+                    <label for="minCijena">Minimalna cijena</label>
+                    <input type="number" id="minCijena" name="minCijena" min="30" max="240" value="30"><br>
+                    <label for="maxCijena">Maksimalna cijena</label>
+                    <input type="number" id="maxCijena" name="maxCijena" min="30" max="240" value="240"><br>
+                    <label for="popusti1">Popusti</label>
+                    <input type="radio" id="popusti1" name="popusti" value="25" checked>-25%
+                    <input type="radio" id="popusti2" name="popusti" value="50">-50%
+                    <input type="radio" id="popusti3" name="popusti" value="75">-75%<br>
+                    <label for="besplatnaDostava">Besplatna dostava</label>
+                    <input type="checkbox" id="besplatnaDostava" name="besplatnaDostava"><br>
+                    <label for="dostupnost1">Dostupnost u poslovnicama</label>
+                    <input type="checkbox" id="dostupnost1" name="dostupnostPozega" value="Pozega">Požega
+                    <input type="checkbox" id="dostupnost2" name="dostupnostZagreb" value="Zagreb">Zagreb
+                    <input type="checkbox" id="dostupnost3" name="dostupnostVarazdin" value="Varazdin">Varaždin
+                    <input type="checkbox" id="dostupnost4" name="dostupnostSlavonskiBrod" value="SlavonskiBrod">Slavonski Brod
+                    <input type="checkbox" id="dostupnost5" name="dostupnostPorec" value="Porec">Poreč<br>
+                </fieldset>
+              </div>
+              <input class="gridDijete3" type="submit" id="posalji2" name="pretrazi" value="Pretraži">
+          </form>
+        </section>
+        <br>
+        <section id="popisProizvoda">
+            <h3 class="naslov">Popis proizvoda - dodaci za igru</h3>
+              <table>
+                  <thead>
+                    <tr>
+                      <th>Naziv proizvoda</th>
+                      <th>Cijena s popustom</th>
+                      <th>Količina</th>
+                      <th>Ukupna cijena</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Among Us: Longbean Plush</td>
+                      <td rowspan="2">70&euro; popust -50%</td>
+                      <td>2</td>
+                      <td>140&euro;</td>
+                    </tr>
+                    <tr>
+                      <td>Popust</td>
+                      <td>2</td>
+                      <td>70&euro;</td>
+                    </tr>
+                    <tr>
+                      <td>Among Us: Crewmate Costume</td>
+                      <td rowspan="2">30&euro; popust -50%</td>
+                      <td>1</td>
+                      <td>60&euro;</td>
+                    </tr>
+                    <tr>
+                      <td>Popust</td>
+                      <td>1</td>
+                      <td>30&euro;</td>
+                    </tr>
+                    <tr>
+                      <td>Among Us: Cosmicube Hoodie</td>
+                      <td rowspan="2">60&euro; popust -75%</td>
+                      <td>3</td>
+                      <td>240&euro;</td>
+                    </tr>
+                    <tr>
+                      <td>Popust</td>
+                      <td>3</td>
+                      <td>60&euro;</td>
+                    </tr>
+                    <tr>
+                      <td>Dostava</td>
+                      <td colspan="3">Besplatno</td>
+                    </tr>
+                  </tbody>
+          </table>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023. Martina Balja
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <img src="../dokumenti/slike/licenca.png" alt="licenca CC BY">
+        </a>
+        <img src="../dokumenti/slike/HTML5.png" alt="HTML oznaka" width="60">
+    </footer>
+</body>
+
+</html>

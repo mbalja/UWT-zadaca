@@ -1,0 +1,332 @@
+@media print {
+
+@page {
+    size: A4;
+    margin: 1cm;
+}
+
+* {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+
+#oAutoru ol,
+.navigacijaborder {
+    text-align: justify;
+}
+
+
+/*INDEX*/
+
+#indexHtml {
+    background-color: white;
+}
+
+footer {
+    color: black;
+}
+
+header a {
+    color: black;
+}
+
+.naslov {
+    color: black;
+}
+
+nav ul {
+    background-color: white;
+    font-size: 12px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: white;
+}
+
+.aktivna {
+    background-color: white;
+}
+
+#oIgrici {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+#borderOIgrici {
+    border: 10px solid white;
+    background-color: white;
+}
+
+#pravilaIgre {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+#borderPravila {
+    border: 10px solid white;
+    background-color: white;
+}
+
+div#recenzije {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+#borderRecenzije {
+    border: 10px solid white;
+    background-color: white;
+}
+
+#townOfImpostors {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+#sheriffMod {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+#borderTown, #borderSheriff, #borderLove {
+    border: 10px solid white;
+    background-color: white;
+}
+
+div#loveCouple {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.gumb {
+    display: none;
+    color: black;
+    border: 2px solid white;
+    font-size: 12px;
+    background-color: white;
+}
+
+
+/*AUTOR*/
+
+#autorHtml {
+    background-color: white;
+}
+
+#oAutoru {
+    border: 10px solid white;
+    background-color: white;
+    color: black;
+}
+
+li a[href="mailto:"] {
+    color: black;
+}
+
+#autorBorder {
+    border: 3px solid white;
+    background-color: white;
+}
+
+
+/*DOKUMENTACIJA*/
+
+#dokumentacijaHtml{
+    background-color: white;
+}
+
+.navigacija {
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+}
+
+.dokumentacija {
+    color: black;
+}
+
+.navigacija, .dokumentacija {
+    color: black;
+}
+
+.navigacijaborder {
+    border: 3px solid white;
+    background-color: white;
+}
+
+
+/*FORUM*/
+
+#forumHtml {
+    background-color: white;
+}
+
+#kljucneRijeci {
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+}
+
+#posalji, #posalji2 {
+    border: 2px solid white;
+    background-color: white;
+    font-size: 12px;
+}
+
+.padajucaLista1 {
+    border: 1px solid white;
+    background-color: white;
+}
+  
+#objave h3 {
+    color: black;
+}
+  
+#objave div {
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+}
+
+#objave div:nth-child(even) {  /*pseudo element*/
+    background-color: white;
+    color: black;
+}
+  
+#zaPretrazivanje {
+    border: 2px solid white;
+    background-color: white;
+}
+
+#obrazacZaObjavljivanje label[for="tema"],
+#obrazacZaObjavljivanje label[for="komentar"] {
+    color: black;
+}
+
+#formObjavljivanje {
+    border: 2px solid white;
+    background-color: white;
+}
+
+
+/*GALERIJA*/
+
+#galerijaHtml {
+    background-color: white;
+}
+
+.naslov {
+    color: black;
+}
+
+#slike {
+    color: black;
+}
+
+#slikeBorder {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+#videi {
+    color: black;
+}
+
+#videiBorder {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+#interaktivnaSlika {
+    color: black;
+}
+
+
+/*TRGOVINA*/
+
+#trgovinaHtml {
+    background-color: white;
+}
+
+#pretraziTrgovinu {
+    color: black;
+}
+
+table {                            
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table>tbody>tr:nth-child(odd) {
+    background-color: white;
+}
+table>thead {
+    background-color: white;
+    color: black;
+}
+
+table>tbody>tr:last-child {
+    background-color: white;
+    color: black;
+}
+
+.header_footer {
+    border: 10px solid white;
+    background-color: white;
+}
+
+fieldset {                         
+    background-color: white;
+    border: 1px solid white;
+}
+
+/*OSTALO*/
+
+nav {
+    display: none;
+}
+img {
+    display: none;
+}
+figure {
+    display: none;
+}
+form {
+    display:none;
+}
+iframe,
+video {
+    display: none;
+}
+
+#obrazacZaObjavljivanje,
+#obrazacZaPretrazivanje,
+#pretraziTrgovinu {
+    display: none;
+}
+
+
+
+}

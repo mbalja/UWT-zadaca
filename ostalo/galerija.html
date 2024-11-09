@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+        <title>Galerija</title>
+        <meta name="autor" content="Martina Balja">
+        <meta name="opis" content="Stranica koja sadrži slike i videa">
+        <meta name="kljucne_rijeci" content="slike, videa, galerija">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_mali.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_srednji.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_responzivni_veliki.css">
+        <link rel="stylesheet" type="text/css" href="../css/dizajn_ispis.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="galerijaHtml">
+    <header>
+        <a href="../index.html">
+            <img src="../dokumenti/slike/Among-Us-Logo.png" width="200" alt="lik igrice">
+            <h1>Among Us</h1>
+        </a>
+    </header>
+    <nav>
+        <img src="../dokumenti/slike/hamburger.png" id="hamburger" alt="Hamburger">
+        <ul>
+            <li><a href="../index.html">Početna stranica</a></li>
+            <li><a href="../dokumentacija/autor.html">Autor</a></li>
+            <li><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li><a class="aktivna" href="galerija.html">Galerija</a></li>
+            <li><a href="trgovina.html">Trgovina</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="slike">
+            <h2 class="naslov">Galerija slika</h2>
+        <div id="slikeBorder">
+            <figure>
+                <img src="https://s3b.cashify.in/gpro/uploads/2020/10/22093920/10-tips-to-Win-the-Among-Us-game-Featured.jpg" width="755" alt="Glavni izbornik" class="slika">
+                <figcaption>Glavni izbornik igrice Among us.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/among-us/1/10/Screenshot_%28371%29.png" width="755" alt="Among us ekipa" class="slika">
+                <figcaption>Igrači prije početka igre.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://egamersworld.com/uploads/blog/1601906840625-1.jpg" alt="igranje igrice" class="slika">
+                <figcaption>Tijek igranja igrice Among us.</figcaption>
+            </figure>
+            <figure>
+                <img src="../dokumenti/slike/impostor_glasanje.jpg" alt="Impostor glasanje" class="slika">
+                <figcaption>Svi igrači glasaju tko je impostor.</figcaption>
+            </figure>
+            <figure>
+                <img src="../dokumenti/slike/impostor.png" alt="Impostor" class="slika">
+                <figcaption>Otkrivanje impostora (ubojice)</figcaption>
+            </figure>
+        </div>
+        </section>
+        <br>
+        <section id="videi">
+            <h2 class="naslov">Galerija videa</h2>
+        <div id="videiBorder">
+            <figure>
+                <iframe width="755" height="425" src="https://www.youtube.com/embed/LeY7PkVz0PA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+                <figcaption>Zabavni trenuci igrice</figcaption>
+            </figure>
+            <figure>
+                <iframe width="755" height="425" src="https://www.youtube.com/embed/p0aHDT8wwrw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+                <figcaption>Igranje iz perspektive impostora.</figcaption>
+            </figure>
+            <figure>
+                <iframe width="755" height="425" src="https://www.youtube.com/embed/ExDRpN5cyjE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+                <figcaption>Pogađanje impostora.</figcaption>
+            </figure>
+            <figure>
+                <iframe width="755" height="425" src="https://www.youtube.com/embed/4t1H6-Ix0Eg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+                <figcaption>Najlukaviji impostor ikad.</figcaption>
+            </figure>
+            <figure>
+                <video width="755" height="425" controls>
+                    <source src="../dokumenti/multimedija/amongus_99_impostors.mp4" class="video">
+                </video>
+                <figcaption>99 impostora.</figcaption>
+            </figure>
+        </div>
+        </section>
+        <br>
+        <section id="interaktivnaSlika">
+            <h2 class="naslov">Interaktivna slika</h2>
+            <figure>
+                <img src="../dokumenti/slike/interaktivna.jpg" alt="Interaktivna slika sa 3 impostora" usemap="#mapa">
+                <figcaption>Klik na ljubičastog impostora nas vodi do wiki impostor stranice, tamno zeleni impostor nas vodi do crewmate stranice, a zeleni impostor do službene stranice igrice.</figcaption>
+            </figure>
+            <map name="mapa">
+                <area alt="ljubicastiImpostor" title="Ljubičasti impostor" href="https://among-us.fandom.com/wiki/Impostor" shape="rect" coords="146,200,209,301">
+                <area alt="tamnozeleniImpostor" title="Tamno zeleni impostor" href="https://among-us.fandom.com/wiki/Crewmate" shape="rect" coords="247,211,316,319">
+                <area alt="zeleniImpostor" title="Zeleni impostor" href="https://www.innersloth.com/games/among-us/" shape="rect" coords="352,199,415,300">
+            </map>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023. Martina Balja
+        <a href="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <img src="../dokumenti/slike/licenca.png" alt="licenca CC BY">
+        </a>
+        <img src="../dokumenti/slike/HTML5.png" alt="HTML oznaka" width="60">
+    </footer>
+</body>
+
+</html>
